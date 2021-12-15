@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Point {
     // Define attributes
        double x;
-      double y;
+       double y;
     public Point() {
         // Initialize attributes to 0
        x = 0;
@@ -47,14 +47,13 @@ public class Point {
     public boolean equals(Point otherPoint) {
         // Compare attributes of this point to attributes of otherPoint for equality
         boolean xEqual = Utils.equals(x, otherPoint.x);
-       boolean yEqual = Utils.equals(y, otherPoint.y);
+        boolean yEqual = Utils.equals(y, otherPoint.y);
         return xEqual && yEqual;
         
     }
 
     public String toString() {
         // Represent attributes as string
-        return "(" +  x  + " +  " + y + ")";
-      
+         return "(" + x + ", " + y + ")";
     }
 }
